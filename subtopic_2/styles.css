@@ -6,11 +6,40 @@ div#other{
     div#content div.i1{
         float: left;
         margin-right: 20px;
+        margin-bottom: 0px;
     }
 
     div#content p#p1{
         float: none;
         max-width: none;
         text-align: justify;
+    }
+    
+    div#content p#p2{
+        text-align: justify;
+        width: 100%;
+    }
+
+    div#content div.i2{
+        display: flex;
+        width: 100%;
+        margin: 50px 0px;
+    }
+    
+    div#content div.i2 img{
+        width: 48%;
+        margin: auto;   
+    }
+
+    div#content img.i3{
+        max-height: 100%;
+        object-fit: scale-down;
+    }
+
+    div#content div.i4 img{
+        width: initial;
+        height: 450px;
+        object-fit: contain;
+        display: inline-block;
     }
 }
