@@ -137,15 +137,20 @@ p#other{
 
 */
 
+@keyframes onLoad {
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
 body{
     margin: 0px;
     font-family: Raleway;
     overflow-y: auto;
-}
-
-div#content img {
-    border-radius: 10px;
-    padding: 0px;
+    background-color: #f0f0f0;
 }
 
 #header{
@@ -180,6 +185,7 @@ div#title > h2{
 
 div#other{
     font-size: 16px;
+    display: block;
 }
 
 div#other a{
@@ -189,15 +195,27 @@ div#other a{
 
 div#content{
     font-size: 25px;
+    animation-delay: 2s;
+    animation: onLoad 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+div#content img {
+    border-radius: 10px;
+    padding: 0px;
+    filter: drop-shadow(0px 0px 2px #000);
 }
 
 div#content > p{
     text-indent: 40px;
 }
+
 div.image p{
     font-size: 15px;
     text-align: center;
 }
+
 div.image img{
     width: 100%;
 }
