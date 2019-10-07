@@ -54,3 +54,137 @@
 <!-- 
     help
 -->
+
+
+
+
+body {
+    margin: 0px;
+    
+}
+
+#header {
+    height: 150px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+#header h1 {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    font-size: 100px;
+}
+
+#container h1 {
+    font-size: 70px;
+}
+
+#container h2 {
+    font-size: 40px;
+}
+#container {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+@media only screen and (orientation: landscape) {
+    #header {
+        background-color: #212121;
+    }
+}
+
+
+
+
+div#container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 25px;
+    height: 5000px;
+}
+
+div#title {
+    font-family: "Playfair Display";
+    position: absolute;
+    width: 80%;
+    max-width: 1200px;
+}
+
+div#title > h1{    
+    font-size: 60px;
+    width: 600px;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+div#title > h2{
+    font-size: 45px;
+    font-style: italic;
+}
+
+#header{
+    border-bottom: 1px solid black;
+    font-size: 1em;
+}
+
+.image{
+    float: left;
+    border: 1px solid black;
+    margin: 0px 30px 30px 0px;
+    width: 45%;
+}
+
+.image p{
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    font-size: 0.7em;
+}
+
+.image img{
+    width: 100%;
+}
+
+#container p{
+    text-indent: 40px;
+    font-family: "Raleway";
+}
+
+.wow-text{
+    text-indent: 40px;
+    font-size: 37px;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+.quote{
+    float: right;
+    border: 1px solid darkblue;
+    display: flex;
+    padding-left: 30px;
+}
+
+.quote h3{
+    float: right;
+    text-align: right;
+    margin: auto 0px;
+}
+
+.quote img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 50% 0; 
+    padding-left: 30px;
+}
+
+
+p#other{
+    text-indent: 0px;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
