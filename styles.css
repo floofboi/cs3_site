@@ -157,10 +157,10 @@ body{
     width: 100%;
     height: 100px;
     display: none;
+    background-color: #f0f0f0;
 }
 
 #header h1{
-    color: #f0f0f0;
     margin: auto;
 }
 
@@ -265,11 +265,16 @@ div#footer{
 
 
 @media only screen and (min-width: 800px){
+    div#body{
+        margin: 10px 20px;
+    }
+
     img {
         max-width: 70%;
         margin: auto;
         display: block;
     }
+
     div#header{
         display: flex;
         height: 15px;
@@ -296,7 +301,6 @@ div#footer{
     }
 
     div#header{
-        background-color: #fff;
         margin-bottom: 30px;    
     }
 
