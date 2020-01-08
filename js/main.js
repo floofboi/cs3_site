@@ -28,3 +28,5 @@ function changeTheme(){
         theme = 0;
     }
 }
+
+document.getElementbyId("changeTheme").addEventListener
