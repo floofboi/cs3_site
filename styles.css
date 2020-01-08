@@ -1,6 +1,8 @@
 /*
+!!! old css. kept for legacy support while old code not migrated yet. styles_new.css is better. avoid use
 old failed code. rewrite count: 2
 help me
+
 */
 
 @keyframes onLoad {
@@ -17,6 +19,7 @@ body{
     font-family: Raleway;
     overflow-y: auto;
     background-color: #f0f0f0;
+    transition: all 500ms;
 }
 
 #header{
@@ -107,9 +110,7 @@ div.quote img{
 }
 
 div#footer{
-    background-color: #f0f0f0;  
-    height: 300px;
-    margin: 5px;
+    margin: 10px;
 }
 
 ::-webkit-scrollbar {
