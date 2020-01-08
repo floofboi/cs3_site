@@ -2,19 +2,27 @@
 programs to code: 
     dark/light mode
     navbar
-
+    
 */
 
 var theme = 0;
+var a = document.getElementsByTagName("a")
 
 function darkMode(){
     document.body.style.backgroundColor = "#212121";
     document.body.style.color = "#fff";
+    
+    for(var i = 0; i < a.length; i++){
+        a[i].style.color = "#fff";
+    }
 }
 
 function lightMode(){
-    document.body.style.backgroundColor = "#fff";
-    document.body.style.color = "#212121";
+    document.body.style.backgroundColor = "initial";
+    document.body.style.color = "initial";
+    for(var i = 0; i < a.length; i++){
+        a[i].style.color = "initial";
+    }
 }
 
 function changeTheme(){
@@ -29,4 +37,4 @@ function changeTheme(){
     }
 }
 
-document.getElementbyId("changeTheme").addEventListener
+document.getElementById("changeTheme").addEventListener("click", changeTheme);

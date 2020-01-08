@@ -1,5 +1,5 @@
 /*
-!!! old css. kept for legacy support while old code not migrated yet. styles_new.css is better. avoid use
+!!! old css. kept for legacy support while old code not migrated yet. 
 old failed code. rewrite count: 2
 help me
 
@@ -240,4 +240,19 @@ div#footer{
     div#footer h2{
         font-family: Playfair Display;
     }
+}
+
+p.nav{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+i.nav{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    transition: all 500ms;
 }

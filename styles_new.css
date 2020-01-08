@@ -1,6 +1,9 @@
 /*
-    partial rewrite of old css. 
+    partial rewrite of old css. better handling of title heading
     rewrite count: 3*
+    !!! incomplete responsive css
+
+    help me
 */
 
 body{
@@ -13,7 +16,8 @@ body{
 
 a{
     text-decoration: none;
-    color: #000
+    color: #000;
+    transition: all 500ms;
 }
 
 a:hover{
@@ -48,13 +52,18 @@ div#title > h2{
     font-size: 45px;
     font-weight: 500;
     font-style: italic;
-    margin-bottom: 
+    
 }
 
 p.nav{
     font-size: 20px;
     margin-top: 40px;
 }
+
+i.nav{
+    font-size: 1em;
+}
+
 
 div#content p{
     text-indent: 40px;
@@ -96,6 +105,25 @@ div.img > img{
 .ctr{
     text-align: center;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #554;
+}
+
 @media only screen and (min-width: 800px){
     div#body{
         width: 100%;
