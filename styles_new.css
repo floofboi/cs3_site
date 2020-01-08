@@ -47,7 +47,41 @@ p.nav{
     margin-top: 40px;
 }
 
+div.wow-text{
+    font-size: 30px;
+    text-indent: 40px;
+    display: flex;
+}
 
+div.wow-text h1{
+    font-family: Playfair Display;
+    font-size: 200px;
+    color: #434343;
+    margin: auto 0px;
+}
+
+div.wow-text p{
+    position: relative;
+    top: 1em;
+}
+
+div.img > img{
+    border-radius: 10px;
+    padding: 0px;
+    filter: drop-shadow(0px 0px 2px #000);
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.ctr{
+    text-align: center;
+}
 @media only screen and (min-width: 800px){
     div#body{
         width: 100%;
