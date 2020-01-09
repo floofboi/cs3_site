@@ -240,11 +240,49 @@ div#footer{
     div#footer h2{
         font-family: Playfair Display;
     }
+
+    #sidebar a {
+        color: #000;
+        padding: 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        
+    }
+
+    #sidebar a:hover {
+        background-color: #e0e0e0
+    }
+
+    #sidebar{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        background-color: #efefef;
+        transition: 0.4s;
+        padding-top: 0px;
+        filter: drop-shadow(0px 0px 5px #000);
+        overflow-x: hidden;
+        z-index: 1;
+        margin: 0px;
+    }
+
+    #sidebar > h2{
+        font-family: Playfair Display;
+        text-indent: 10px;
+        display: inline-block;
+    }
+
+    #sidebar > i{
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
 }
 
 p.nav{
+    padding-top: 20px;
     font-size: 20px;
-    margin-top: 40px;
 }
 
 i.nav{

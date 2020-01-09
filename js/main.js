@@ -11,13 +11,16 @@ programs to code:
     comments box thing
 */
 
+
+var a = document.getElementsByTagName("a");
+var sb = document.getElementById("sidebar");
+var sbEnable = false;
 var theme = 0;
-var a = document.getElementsByTagName("a")
 
 function darkMode(){
     document.body.style.backgroundColor = "#212121";
     document.body.style.color = "#fff";
-    
+    sb.style.backgroundColor = "#434343"
     for(var i = 0; i < a.length; i++){
         a[i].style.color = "#fff";
     }
@@ -26,6 +29,7 @@ function darkMode(){
 function lightMode(){
     document.body.style.backgroundColor = "initial";
     document.body.style.color = "initial";
+    sb.style.backgroundColor = "#efefef";
     for(var i = 0; i < a.length; i++){
         a[i].style.color = "initial";
     }
@@ -43,15 +47,23 @@ function changeTheme(){
     }
 }
 
-var sb = document.getElementById("sidebar");
-
-function openSideBar(){
-    sb.style.display = "block";
-    sb.style.transform = "translate(300px)";
+;
+function toggleSideBar(){
+    if(!sbEnable){
+        sb.style.width = "300px";
+        sbEnable = true;
+    } 
+    else{
+        sb.style.width = "0";
+        sbEnable = false;
+    }
 }
 
-function closeSideBar(){
-    document.getElementById("sidebar").style.display = "none";
+function sbEn(){
+    sb.style.width = "300px";
+        document.getElementById("body").style.marginLeft = "300px";
 }
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
+document.getElementById("sidenav").addEventListener("click", toggleSideBar);
+document.getElementById("sidenavclose").addEventListener("click", toggleSideBar);
