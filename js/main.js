@@ -47,7 +47,6 @@ function changeTheme(){
     }
 }
 
-;
 function toggleSideBar(){
     if(!sbEnable){
         sb.style.width = "300px";
@@ -59,10 +58,16 @@ function toggleSideBar(){
     }
 }
 
-function sbEn(){
-    sb.style.width = "300px";
-        document.getElementById("body").style.marginLeft = "300px";
+function verify(){
+    var value = document.getElementById("opiniontxt").value;
+    if(value.length < 40){
+        alert("Not enough characters!");
+        return false;
+    }
+    alert("Thank you!");
+    return true;
 }
+
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
 document.getElementById("sidenav").addEventListener("click", toggleSideBar);

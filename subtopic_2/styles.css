@@ -14,6 +14,7 @@ div#content img{
 
     div#content{
         margin-top: 60px;
+        bottom: 0px;
     }
 
     div#content div.i1{

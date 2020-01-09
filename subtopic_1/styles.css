@@ -2,6 +2,9 @@ div#other{
     left: 120px;
 }
 
+div#content{
+    bottom: 0px;
+}
 @media only screen and (min-width: 1200px){
    div#content > div.i2{
         width: 100%;

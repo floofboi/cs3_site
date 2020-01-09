@@ -195,7 +195,6 @@ div#footer{
     div#content{
         font-size: 20px;
         position: relative;
-        bottom: 100px;
     }
 
     div#content div.i1{ /* First image */

@@ -96,11 +96,11 @@ div.img > img{
 
 /* UTIL START rip di nagamit */
 .left{
-    text-align: left;
+    float: left;
 }
 
 .right{
-    text-align: right;
+    float: right;
 }
 
 .ctr{
@@ -111,6 +111,8 @@ div.img > img{
     flex-basis: 100%;
     width: 0px;
 }
+
+
 
 /* UTIL END */
 /* SCROLLBAR START */
@@ -131,8 +133,28 @@ div.img > img{
 ::-webkit-scrollbar-thumb:hover {
     background: #554;
 }
-/* SCROLLBAR END*/
+/* SCROLLBAR END */
+/*  QUOTE START */
+div.quote{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px auto;
+    max-width: 95%;
+}
 
+div.quote img{ 
+    max-width: 30%;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+div.quote p{
+    max-width: 60%;
+    margin: auto;
+    float: right;
+}
+/*  QUOTE END */
+/* RESPONSIVE START */
 @media only screen and (min-width: 800px){
     div#body{
         width: 100%;
@@ -161,7 +183,7 @@ div.img > img{
 
     div#body{
         width: 1200px;
-        margin: auto;
+        margin: 0px auto;
     }
     
     div#content_head {
@@ -226,6 +248,23 @@ div.img > img{
 
     #content {
         padding-bottom: 50px;
+    }
+
+    form#opinion > input[type="text"]{
+        font-family: Raleway;
+        width: 50%;
+        padding: 0 0 300px 0;
+        border: 3px solid #212121;
+        display: block;
+        background-color: #f0f0f0;
+        border-radius: 2%;
+    }
+
+    form#opinion > input[type="submit"]{
+        margin: 10px;
+        padding: 10px;
+        font-family: Raleway;
+    
     }
 
 }
