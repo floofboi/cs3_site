@@ -2,7 +2,7 @@
 programs to code: 
     dark/light mode
     navbar
-    
+    time logger thing*???
 */
 
 var theme = 0;
@@ -36,5 +36,6 @@ function changeTheme(){
         theme = 0;
     }
 }
+
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
