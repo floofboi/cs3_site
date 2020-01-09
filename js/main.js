@@ -1,8 +1,14 @@
 /*
 programs to code: 
     dark/light mode
-    navbar
-    time logger thing*???
+
+    surveys stuff (subtopic 4)
+
+    side navbar
+
+    show time and date
+
+    comments box thing
 */
 
 var theme = 0;
@@ -37,5 +43,8 @@ function changeTheme(){
     }
 }
 
+function openSideBar(){
+    document.getElementById("sidebar").style.left = "300px";
+}
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
