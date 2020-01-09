@@ -175,12 +175,18 @@ div.img > img{
     }
 
     #sidebar{
+        height: 100%;
+        width: 0px;
         background-color: #434343;
-        position: relative;
-        transition: all 500ms;
+        position: fixed;
+        transition: all 1s;
+        transition-timing-function: ease-out;
+
     }
+
     #sidebar > *{
         display: block;
+        transition: 500ms;
     }
 
     #sidebar > a{

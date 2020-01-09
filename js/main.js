@@ -43,8 +43,15 @@ function changeTheme(){
     }
 }
 
+var sb = document.getElementById("sidebar");
+
 function openSideBar(){
-    document.getElementById("sidebar").style.left = "300px";
+    sb.style.display = "block";
+    sb.style.transform = "translate(300px)";
+}
+
+function closeSideBar(){
+    document.getElementById("sidebar").style.display = "none";
 }
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
