@@ -224,3 +224,86 @@ iframe{
 .open{
   width:300px;
 }
+
+@media screen and (orientation: landscape){
+  #bg{
+    height: 50vh;
+    width: 100vw;
+    background-position-x: 30%; 
+    background-size: 100% auto;
+  }
+
+  h1{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-size: 7vw;
+    display:inline; 
+  }
+
+  h2{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-size: 5vw;
+  }
+
+  #jumbotron > div > p{
+    font-size: 4.5vw;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 800px){
+  #bg{
+    height: 70vh;
+    width: 100vw;
+    background-position-x: 30%; 
+    background-size: 100% auto;
+  }
+
+  h1{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-size: 4vw;
+    display:inline; 
+  }
+
+  h2{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-size: 2.5vw;
+  }
+
+  div#bg > div#jumbotron{
+    margin-left: 4vh;
+    position: relative;
+    top: 10vh;
+  }
+
+  div#jumbotron > div{
+    color: white;
+    display:inline-block;  
+    margin: 0px auto;
+  }
+
+  #jumbotron > div > p{
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0px;
+    margin-top: 10vh;
+    text-align: left; 
+    font-style: italic;
+  }
+
+  #content{
+    padding: 20px;  
+  }
+
+  #content > p{
+    text-indent: 40px;
+    font-size: 2vw;
+  }
+
+  #content > h2{
+    text-align: center;
+  }
+}

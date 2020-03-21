@@ -17,7 +17,7 @@ help me
 body{
     margin: 0px;
     font-family: Raleway;
-    overflow-y: auto;
+    
     background-color: #f0f0f0;
     transition: all 500ms;
 }
@@ -131,6 +131,9 @@ div#footer{
     background: #554;
 }
 
+#sidenav{
+    font-size: 4.5vw;
+}
 
 @media only screen and (min-width: 800px){
     div#body{
@@ -165,6 +168,10 @@ div#footer{
     div#footer{
         margin: 20px;
         
+    }
+
+    #sidenav{
+        font-size: 30px;
     }
 }
 
@@ -294,7 +301,5 @@ a{
     transition: all 500ms;
 }
 
-#sidenav{
-    font-size: 4.5vw;
-}
+
 

@@ -65,9 +65,12 @@
                 <br>
                 <p>What is your opinion on this issue? (Write at least 40 characters)</p>
                 <form id="opinion" onsubmit="return verify()">
-                    <input type="text" id="opiniontxt">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="text" id="opiniontxt" placeholder="Input" required minlength="40">
                     <input type="submit">
                 </form>
+                <h4 id="out"></h4>
                 
             </div> 
             <div id="footer">

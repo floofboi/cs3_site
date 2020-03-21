@@ -61,11 +61,14 @@ function toggleSideBar(){
 
 function verify(){
     var value = document.getElementById("opiniontxt").value;
-    if(value.length < 40){
-        alert("Not enough characters!");
+    if(value.length < 10){
+        document.getElementById("out").innerHTML = "You have not reached the minimum character limit.";
+        document.getElementById("out").style.color = "red";
         return false;
     }
-    alert("Thank you!");
+    document.getElementById("out").innerHTML = "Thank you!";
+    document.getElementById("out").style.color = "lime";
+    event.preventDefault();
     return true;
 }
 
