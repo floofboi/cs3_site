@@ -36,7 +36,8 @@ a:hover{
 }
 
 div#body{
-    margin: 10px 10px;
+    margin: 0px 10px;
+    padding: 10px;
 }
 
 div#title{
@@ -57,7 +58,6 @@ div#title > h2{
 
 p.nav{
     font-size: 20px;
-    margin-top: 40px;
 }
 
 i.nav{
@@ -91,7 +91,7 @@ div.img > img{
     border-radius: 10px;
     padding: 0px;
     filter: drop-shadow(0px 0px 2px #000);
-    height: 500px;
+    width: 90vw;
 }
 
 /* UTIL START rip di nagamit */
@@ -204,7 +204,7 @@ div.quote p{
         text-indent: 40px;
         display: flex;
     }
-
+}
     #sidebar a {
         color: #000;
         padding: 8px 32px;
@@ -267,7 +267,7 @@ div.quote p{
     
     }
 
-}
+
 /*responsive end*/
 
 #bg {

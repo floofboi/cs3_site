@@ -53,8 +53,8 @@ function toggleSideBar(){
         sb.style.width = "300px";
         sbEnable = true;
     } 
-    else{
-        sb.style.width = "0";
+    else{   
+        sb.style.width = "0px";
         sbEnable = false;
     }
 }
