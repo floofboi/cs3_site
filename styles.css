@@ -65,10 +65,10 @@ div#other a{
 
 div#content{
     font-size: 4.5vw;
-    animation-delay: 2s;
+    /*animation-delay: 2s;
     animation: onLoad 500ms;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out;*/
 }
 
 div#content img {
