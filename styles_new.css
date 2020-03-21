@@ -268,3 +268,9 @@ div.quote p{
     }
 
 }
+/*responsive end*/
+
+#bg {
+    background-image: url("https://www.bloomberg.com/graphics/2019-manila-reclamation/img/2019-manila-reclamation-facebook.png");  
+    height: 100vw;
+}

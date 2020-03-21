@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Metro Manila Traffic: Why It's So Bad</title>
+        <link rel="stylesheet" href="style_landing.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157709155-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('js', new Date());
+            gtag('config', 'UA-157709155-4');
+
+            function resizeIframe(obj){
+                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script>
+    </head>
+    <body>  
+        <div id="sidebar" class="sidebar">
+            <i class="nav material-icons" id="sidenavclose"><a href="#" class="sblink"> menu </a></i>
+            <a href="#" class="sblink"></a>
+            <a href="..\index.html" class="sblink">Home</a>
+            <a href="..\subtopic_1/index.html" class="sblink">Causes</a>
+            <a href="..\subtopic_2/index.html" class="sblink">The Government's Plans</a>
+            <a href="..\subtopic_3/index.html" class="sblink">Effects</a>
+            <a href="..\subtopic_4/index.html" class="sblink">The Public's Opinion</a>
+            <a href="..\auth/index.html" class="sblink">Authors</a>  
+        </div>
+        <div id="main">
+            <div id="bg">
+                <i class="nav material-icons bgb"><a href="#" id="sidenav"> menu </a></i>
+                <i class="nav material-icons bgb"><a href="#" id="changeTheme">lightbulb_outline</a></i>
+                <div id="jumbotron">
+                    <div>
+                        <h1>Metro Manila Traffic:</h1> <br>
+                        <h2> Why is it so <em>bad</em>?</h2>
+                        <p> A writeup on the growing transportation problem <br> plaguing the country's capital.</p>
+                    </div>
+                </div>      
+            </div>
+            <div id="content">
+                <p>Traffic is a very big problem in Metro Manila. It plagues commuters and motorists alike. In EDSA alone, there are more than 7,500 vehicles using the road per hour for each direction. That is way more than the road's capacity of 6,000 vehicles per direction, and that figure is only expected to grow. Traffic congestion is a big roadblock to not only the economy of the capital but also to the welfare of its people.</p>
+                <p>In this series of articles, we will cover:</p>
+                <ul>
+                    <li>A quick rundown about Manila Traffic.</li>
+                    <li>What causes the hellish traffic we all know and hate?</li>
+                    <li>How is government helping to ease the traffic</li>
+                    <li>How does traffic affect people overall</li>
+                    <li>What are the opinions of the people about traffic</li>
+                    <li>How do people portray traffic in media?</li>
+                    <li>The most common traffic violations in the Philippines</li>
+                </ul>
+                <h2> continue reading </h2>     
+                <hr>           
+            </div>
+            <iframe src="main/index.html" frameborder="0" onload="resizeIframe(this)" scrolling="no"></iframe>
+        </div>
+
+
+        <script src="js/main.js"></script>
+        <script>
+            var b = document.getElementsByClassName("bgb");
+            for(var i = 0; i < b.length; i++){
+                b[i].style.color = "white";
+            }
+            function d(){
+                document.getElementsByTagName("iframe")[0].contentWindow.changeTheme();
+                changeTheme();
+            }
+        </script>
+        <script>
+        document.getElementById("changeTheme").removeEventListener("click", changeTheme);
+        document.getElementById("changeTheme").addEventListener("click", d);
+        </script>
+    </body>     
+</html> 

@@ -12,7 +12,8 @@ programs to code:
 */
 
 
-var a = document.getElementsByTagName("a");
+var a = document.getElementsByClassName("sblink"); // CHANGED TO CLASS!!! NOTE IF THE OTHER LINKS BREAK JANSEN
+//var a = document.getElementsByTagName("a");
 var sb = document.getElementById("sidebar");
 var sbEnable = false;
 var theme = 0;
