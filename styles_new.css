@@ -9,7 +9,6 @@
 body{
     margin: 0px;
     font-family: Raleway;
-    overflow-y: auto;
     background-color: #f0f0f0;
     transition: all 500ms;
 }
@@ -100,6 +99,7 @@ form#opinion > input{
     display: block;
     font-family: Raleway;
     border: 2px solid #212121;
+    transition-duration: 500ms;
 }
 
 form#opinion > input#opiniontxt{
@@ -215,7 +215,7 @@ div.quote p{
     }
 
     div#body{
-        width: 1200px;
+        width: 100vw;
         margin: 0px auto;
     }
     

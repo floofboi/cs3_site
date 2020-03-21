@@ -17,6 +17,7 @@ var a = document.getElementsByClassName("sblink"); // CHANGED TO CLASS!!! NOTE I
 var sb = document.getElementById("sidebar");
 var sbEnable = false;
 var theme = 0;
+var inputs = document.getElementsByTagName("input");
 
 function darkMode(){
     document.body.style.backgroundColor = "#212121";
@@ -24,6 +25,11 @@ function darkMode(){
     sb.style.backgroundColor = "#434343"
     for(var i = 0; i < a.length; i++){
         a[i].style.color = "#fff";
+    }
+    for(var i = 0; i < inputs.length; i++){
+        inputs[i].style.color = "#fff";
+        inputs[i].style.backgroundColor = "#212121";
+        inputs[i].style.borderColor= "#fff";
     }
 }
 
@@ -33,6 +39,11 @@ function lightMode(){
     sb.style.backgroundColor = "#efefef";
     for(var i = 0; i < a.length; i++){
         a[i].style.color = "initial";
+    }
+    for(var i = 0; i < inputs.length; i++){
+        inputs[i].style.color = "initial";
+        inputs[i].style.backgroundColor = "initial";
+        inputs[i].style.borderColor= "initial";
     }
 }
 
@@ -72,6 +83,9 @@ function verify(){
     return true;
 }
 
+function visit(){
+    window.open(this.innerHTML,"_blank");
+}
 
 document.getElementById("changeTheme").addEventListener("click", changeTheme);
 document.getElementById("sidenav").addEventListener("click", toggleSideBar);
