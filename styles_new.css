@@ -69,9 +69,9 @@ div#content p{
 }
 
 div.wow-text{
-    font-size: 30px;
-    text-indent: 40px;
+    font-size: 20px;
     display: flex;
+    text-indent: 0px;
 }
 
 div.wow-text h1{
@@ -84,6 +84,7 @@ div.wow-text h1{
 div.wow-text p{
     position: relative;
     top: 1em;
+    text-indent: 0px !important;
 }
 
 div.img > img{
